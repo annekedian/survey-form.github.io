@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Rupaa Alam's Research Market</h1>
+    <p id="description">Please take a few minutes to tell us more about you and your preferences. Thankyou!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> Name <input id="name" name="name" type="text" placeholder="Enter Your Name" required /></label><br>
+        <label for="email" id="email-label"> Email <input id="email" name="email" type="email" placeholder="Enter Your Email" required /></label><br>
+        <label for="number" id="number-label"> Number <input id="number" name="number" type="number" min="12" max="13" placeholder="Enter Your Number" required /></label><br>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown" id="dropdown-label">What's your gender?</label>
+        <select id="dropdown" name="dropdown">
+            <option value="option1">Male</option>
+            <option value="option2">Female</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label id="radio-group-label">Could you provide details about your monthly salary?</label><br>
+        <label for="low-income"><input id="low-income" type="radio" name="account-type" class="inline" value="low-income"/> < 3.000.000</label><br>
+        <label for="middle-income"><input id="middle-income" type="radio" name="account-type" class="inline" value="middle-income" /> 3.000.000 - 5.000.000</label><br>
+        <label for="high-income"><input id="high-income" type="radio" name="account-type" class="inline" value="high-income" /> > 5.000.000</label><br>
+      </fieldset>
+      <fieldset>
+        <label id="checkbox-group-label">Which of Rupaa Alam Ecoprint's products is your favorite?</label><br>
+        
+        <input type="checkbox" id="option1" name="checkbox-group" value="option1" class='inline'>
+        <label for="option1">Fabric</label>
+        
+        <input type="checkbox" id="option2" name="checkbox-group" value="option2" class='inline'>
+        <label for="option2">Clothes</label>
+        
+        <input type="checkbox" id="option3" name="checkbox-group" value="option3" class='inline'>
+        <label for="option3">Mask</label><br>
+
+        <label for="bio">Any comments or suggestions?
+          <br><textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your comment here"></textarea>
+        </label><br>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
